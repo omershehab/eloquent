@@ -1,3 +1,7 @@
+
+@extends('layout.master')
+@section('title', ' Edit')
+@section('content')
 <h1>edit items</h1>
 <br><br>
 <form action="{{ route('items.update', $item->id) }}" method="post">
@@ -7,3 +11,4 @@
     <input type="text" name="body" value="{{ $item->body }}"><br>
     <button type="submit">update</button>
 </form>
+@endsection
